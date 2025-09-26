@@ -8,6 +8,7 @@ TagManager:
   - CoinText
   - BouncePad
   - BackGround
+  - FlyEnemy
   layers:
   - Default
   - TransparentFX

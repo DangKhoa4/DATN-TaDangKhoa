@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -43,6 +43,12 @@ public class Player : MonoBehaviour
         //move left and right
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
+        // flip player theo hướng di chuyển
+        if (moveInput > 0.01f)
+            spriteRenderer.flipX = false; // quay phải
+        else if (moveInput < -0.01f)
+            spriteRenderer.flipX = true;  // quay trái
 
         if (isGrounded)
         {
@@ -106,14 +112,14 @@ public class Player : MonoBehaviour
     // get damage
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Damage")
+        if (collision.gameObject.tag == "Damage")
         {
             PlaySFX(hurtClip);
             health -= 25;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             StartCoroutine(BlinkRed());
 
-            if(health <= 0)
+            if (health <= 0)
             {
                 Die();
             }
@@ -121,6 +127,14 @@ public class Player : MonoBehaviour
         else if (collision.gameObject.tag == "BouncePad")
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce * 2);
+        }
+        else if (collision.gameObject.CompareTag("FlyEnemy"))
+        {
+            // player nhảy lên khi chạm enemy
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            PlaySFX(jumpClip);
+            StartCoroutine(BlinkRed());
+            health -= 25;
         }
     }
     //red color when get damage
