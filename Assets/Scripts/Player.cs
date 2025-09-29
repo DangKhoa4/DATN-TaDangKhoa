@@ -8,13 +8,11 @@ public class Player : MonoBehaviour
     public int health = 100;
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
+    public float jumpAdd = 5f;
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
     public Image healthImage;
-
-    public AudioClip jumpClip;
-    public AudioClip hurtClip;
 
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -25,8 +23,15 @@ public class Player : MonoBehaviour
 
     private AudioSource audioSource;
 
+    AudioManager audioManager;
+
     public int extraJumpsValue = 1;
     private int extraJumps;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -61,13 +66,13 @@ public class Player : MonoBehaviour
             if (isGrounded)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                PlaySFX(jumpClip);
+                audioManager.PlaySFX(audioManager.jump);
             }
             else if (extraJumps > 0)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 extraJumps--;
-                PlaySFX(jumpClip);
+                audioManager.PlaySFX(audioManager.jump);
             }
         }
 
@@ -114,25 +119,26 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Damage")
         {
-            PlaySFX(hurtClip);
+            audioManager.PlaySFX(audioManager.hurt);
             health -= 25;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             StartCoroutine(BlinkRed());
 
             if (health <= 0)
             {
+                audioManager.PlaySFX(audioManager.death);
                 Die();
             }
         }
         else if (collision.gameObject.tag == "BouncePad")
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce * 2);
+            audioManager.PlaySFX(audioManager.jump);
         }
         else if (collision.gameObject.CompareTag("FlyEnemy"))
         {
             // player nhảy lên khi chạm enemy
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            PlaySFX(jumpClip);
             StartCoroutine(BlinkRed());
             health -= 25;
         }
@@ -150,11 +156,6 @@ public class Player : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 
-    public void PlaySFX(AudioClip audioClip, float volume = 1f) 
-    {
-        audioSource.clip = audioClip;
-        audioSource.volume = volume;
-        audioSource.Play();
-    }
+
 
 }

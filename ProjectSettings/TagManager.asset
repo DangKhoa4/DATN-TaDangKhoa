@@ -9,6 +9,7 @@ TagManager:
   - BouncePad
   - BackGround
   - FlyEnemy
+  - Audio
   layers:
   - Default
   - TransparentFX

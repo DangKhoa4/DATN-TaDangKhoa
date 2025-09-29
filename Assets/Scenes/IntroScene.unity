@@ -261,29 +261,30 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Trong m\u1ED9t khu r\u1EEBng thanh b\xECnh, c\xF3 m\u1ED9t ch\xFA th\u1ECF
-    nh\u1ECF s\u1ED1ng c\xF9ng ng\u01B0\u1EDDi \xF4ng gi\xE0 nua nh\u01B0ng tr\xE0n
-    \u0111\u1EA7y y\xEAu th\u01B0\u01A1ng.\n\xD4ng kh\xF4ng ch\u1EC9 l\xE0 ng\u01B0\u1EDDi
-    nu\xF4i d\u01B0\u1EE1ng, m\xE0 c\xF2n l\xE0 ng\u01B0\u1EDDi k\u1EC3 cho ch\xFA
-    nghe bi\u1EBFt bao c\xE2u chuy\u1EC7n huy\u1EC1n b\xED v\u1EC1 th\u1EBF gi\u1EDBi
-    r\u1ED9ng l\u1EDBn ngo\xE0i kia.\nM\u1ED7i t\u1ED1i, d\u01B0\u1EDBi \xE1nh tr\u0103ng,
-    hai \xF4ng ch\xE1u ng\u1ED3i b\xEAn nhau, chia s\u1EBB ni\u1EC1m vui gi\u1EA3n
-    d\u1ECB v\xE0 b\xECnh y\xEAn.\n\nNh\u01B0ng r\u1ED3i, m\u1ED9t bu\u1ED5i s\xE1ng
-    l\u1EA1 th\u01B0\u1EDDng, \xF4ng b\u1ED7ng bi\u1EBFn m\u1EA5t.\nNg\u01B0\u1EDDi
-    ta \u0111\u1ED3n r\u1EB1ng, \xF4ng \u0111\xE3 b\u1ECB cu\u1ED1n l\xEAn nh\u1EEFng
-    h\xF2n \u0111\u1EA3o l\u01A1 l\u1EEDng tr\xEAn tr\u1EDDi \u2013 n\u01A1i \u0111\u1EA7y
-    r\u1EABy hi\u1EC3m nguy v\xE0 qu\xE1i v\u1EADt canh gi\u1EEF.\nKh\xF4ng m\u1ED9t
-    ai d\xE1m b\u01B0\u1EDBc ch\xE2n \u0111\u1EBFn \u0111\xF3\u2026 ngo\u1EA1i tr\u1EEB
-    ch\xFA th\u1ECF nh\u1ECF.\n\nMang theo l\xF2ng d\u0169ng c\u1EA3m v\xE0 ni\u1EC1m
-    tin m\xE3nh li\u1EC7t, c\u1EADu quy\u1EBFt \u0111\u1ECBnh lao v\xE0o chuy\u1EBFn
-    h\xE0nh tr\xECnh ch\u01B0a t\u1EEBng c\xF3.\n\u0110\u1EC3 t\xECm l\u1EA1i \xF4ng,
-    c\u1EADu ph\u1EA3i v\u01B0\u1EE3t qua nh\u1EEFng v\u1EF1c s\xE2u th\u0103m th\u1EB3m,
-    nh\u1EA3y qua t\u1EEBng h\xF2n \u0111\u1EA3o ch\xEAnh v\xEAnh gi\u1EEFa m\xE2y
-    tr\u1EDDi,\nv\u01B0\u1EE3t qua nh\u1EEFng c\u1EA1m b\u1EABy ch\u1EBFt ch\xF3c
-    v\xE0 \u0111\u1ED1i m\u1EB7t v\u1EDBi nh\u1EEFng sinh v\u1EADt hung d\u1EEF ch\u01B0a
-    t\u1EEBng th\u1EA5y.\n\n\u0110\u01B0\u1EDDng \u0111i \u0111\u1EA7y ch\xF4ng gai,
-    nh\u01B0ng trong tr\xE1i tim b\xE9 nh\u1ECF \u1EA5y ch\u1EC9 c\xF3 m\u1ED9t kh\xE1t
-    v\u1ECDng:\n\u201CPh\u1EA3i t\xECm th\u1EA5y \xF4ng, b\u1EB1ng m\u1ECDi gi\xE1.\u201D\n\nV\xE0
-    th\u1EBF l\xE0, chuy\u1EBFn phi\xEAu l\u01B0u b\u1EAFt \u0111\u1EA7u\u2026"
+    nh\u1ECF mang t\xEAn Kitty s\u1ED1ng c\xF9ng ng\u01B0\u1EDDi \xF4ng th\u1ECF
+    gi\xE0 nua nh\u01B0ng tr\xE0n \u0111\u1EA7y y\xEAu th\u01B0\u01A1ng.\n\xD4ng
+    kh\xF4ng ch\u1EC9 l\xE0 ng\u01B0\u1EDDi nu\xF4i d\u01B0\u1EE1ng, m\xE0 c\xF2n
+    l\xE0 ng\u01B0\u1EDDi k\u1EC3 cho ch\xFA nghe bi\u1EBFt bao c\xE2u chuy\u1EC7n
+    huy\u1EC1n b\xED v\u1EC1 th\u1EBF gi\u1EDBi r\u1ED9ng l\u1EDBn ngo\xE0i kia.\nM\u1ED7i
+    t\u1ED1i, d\u01B0\u1EDBi \xE1nh tr\u0103ng, hai \xF4ng ch\xE1u ng\u1ED3i b\xEAn
+    nhau, chia s\u1EBB ni\u1EC1m vui gi\u1EA3n d\u1ECB v\xE0 b\xECnh y\xEAn.\n\nNh\u01B0ng
+    r\u1ED3i, m\u1ED9t bu\u1ED5i s\xE1ng l\u1EA1 th\u01B0\u1EDDng, \xF4ng b\u1ED7ng
+    bi\u1EBFn m\u1EA5t.\nNg\u01B0\u1EDDi ta \u0111\u1ED3n r\u1EB1ng, \xF4ng \u0111\xE3
+    b\u1ECB cu\u1ED1n l\xEAn nh\u1EEFng h\xF2n \u0111\u1EA3o l\u01A1 l\u1EEDng tr\xEAn
+    tr\u1EDDi \u2013 n\u01A1i \u0111\u1EA7y r\u1EABy hi\u1EC3m nguy v\xE0 qu\xE1i
+    v\u1EADt canh gi\u1EEF.\nKh\xF4ng m\u1ED9t ai d\xE1m b\u01B0\u1EDBc ch\xE2n \u0111\u1EBFn
+    \u0111\xF3\u2026 ngo\u1EA1i tr\u1EEB ch\xFA th\u1ECF nh\u1ECF.\n\nMang theo l\xF2ng
+    d\u0169ng c\u1EA3m v\xE0 ni\u1EC1m tin m\xE3nh li\u1EC7t, c\u1EADu quy\u1EBFt
+    \u0111\u1ECBnh lao v\xE0o chuy\u1EBFn h\xE0nh tr\xECnh ch\u01B0a t\u1EEBng c\xF3.\n\u0110\u1EC3
+    t\xECm l\u1EA1i \xF4ng, c\u1EADu ph\u1EA3i v\u01B0\u1EE3t qua nh\u1EEFng v\u1EF1c
+    s\xE2u th\u0103m th\u1EB3m, nh\u1EA3y qua t\u1EEBng h\xF2n \u0111\u1EA3o ch\xEAnh
+    v\xEAnh gi\u1EEFa m\xE2y tr\u1EDDi,\nv\u01B0\u1EE3t qua nh\u1EEFng c\u1EA1m b\u1EABy
+    ch\u1EBFt ch\xF3c v\xE0 \u0111\u1ED1i m\u1EB7t v\u1EDBi nh\u1EEFng sinh v\u1EADt
+    hung d\u1EEF ch\u01B0a t\u1EEBng th\u1EA5y.\n\n\u0110\u01B0\u1EDDng \u0111i \u0111\u1EA7y
+    ch\xF4ng gai, nh\u01B0ng trong tr\xE1i tim b\xE9 nh\u1ECF \u1EA5y ch\u1EC9 c\xF3
+    m\u1ED9t kh\xE1t v\u1ECDng:\n\u201CPh\u1EA3i t\xECm th\u1EA5y \xF4ng, b\u1EB1ng
+    m\u1ECDi gi\xE1.\u201D\n\nV\xE0 th\u1EBF l\xE0, chuy\u1EBFn phi\xEAu l\u01B0u
+    b\u1EAFt \u0111\u1EA7u\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 04148cee6697695488c88ea5cdf803e4, type: 2}
   m_sharedMaterial: {fileID: 883774290161134300, guid: 04148cee6697695488c88ea5cdf803e4, type: 2}
@@ -413,8 +414,8 @@ MonoBehaviour:
   introText: {fileID: 628511088}
   lines:
   - "Trong m\u1ED9t khu r\u1EEBng thanh b\xECnh, c\xF3 m\u1ED9t ch\xFA th\u1ECF nh\u1ECF
-    s\u1ED1ng c\xF9ng ng\u01B0\u1EDDi \xF4ng gi\xE0 nua nh\u01B0ng tr\xE0n \u0111\u1EA7y
-    y\xEAu th\u01B0\u01A1ng."
+    mang t\xEAn Kitty s\u1ED1ng c\xF9ng ng\u01B0\u1EDDi \xF4ng th\u1ECF gi\xE0 nua
+    nh\u01B0ng tr\xE0n \u0111\u1EA7y y\xEAu th\u01B0\u01A1ng."
   - "\xD4ng kh\xF4ng ch\u1EC9 l\xE0 ng\u01B0\u1EDDi nu\xF4i d\u01B0\u1EE1ng, m\xE0
     c\xF2n l\xE0 ng\u01B0\u1EDDi k\u1EC3 cho ch\xFA nghe bi\u1EBFt bao c\xE2u chuy\u1EC7n
     huy\u1EC1n b\xED v\u1EC1 th\u1EBF gi\u1EDBi r\u1ED9ng l\u1EDBn ngo\xE0i kia."

@@ -6,10 +6,12 @@ public class Coin : MonoBehaviour
 
     public AudioClip coinClip;
     private TextMeshProUGUI coinText;
+    AudioManager audioManager;
 
     private void Start()
     {
         coinText = GameObject.FindWithTag("CoinText").GetComponent<TextMeshProUGUI>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,7 +19,7 @@ public class Coin : MonoBehaviour
         {
             Player player = collision.gameObject.GetComponent<Player>();
             player.coins += 1;
-            player.PlaySFX(coinClip, 0.4f);
+            audioManager.PlaySFX(audioManager.getcoin);
             coinText.text = player.coins.ToString();
             Destroy(gameObject);
         }
