@@ -10,6 +10,7 @@ TagManager:
   - BackGround
   - FlyEnemy
   - Audio
+  - ScoreText
   layers:
   - Default
   - TransparentFX

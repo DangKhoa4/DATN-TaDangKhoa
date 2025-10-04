@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
 public class Coin : MonoBehaviour
@@ -22,6 +22,15 @@ public class Coin : MonoBehaviour
             audioManager.PlaySFX(audioManager.getcoin);
             coinText.text = player.coins.ToString();
             Destroy(gameObject);
+            if (ScoreManager.instance != null)
+            {
+                ScoreManager.instance.AddPoint();
+            }
+            else
+            {
+                Debug.LogWarning("⚠️ ScoreManager chưa được khởi tạo!");
+            }
         }
     }
+
 }

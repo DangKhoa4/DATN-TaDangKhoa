@@ -16,6 +16,7 @@ public class GrandPa : MonoBehaviour
             audioManager.PlaySFX(audioManager.checkpoint);
             Time.timeScale = 0;
             winUI.SetActive(true);
+            ScoreManager.instance.ShowScore();
         }
     }
 }
